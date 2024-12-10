@@ -17,6 +17,11 @@
 package io.github.openfacade.table.spring.reactive.mongo;
 
 import io.github.openfacade.table.reactive.api.ReactiveTableOperations;
+import reactor.core.publisher.Flux;
 
 public class ReactiveMongoTableOperations implements ReactiveTableOperations {
+    @Override
+    public <T> Flux<T> findAll(Class<T> type) {
+        return null;
+    }
 }

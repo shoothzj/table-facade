@@ -16,5 +16,18 @@
 
 package io.github.openfacade.table.spring.test.common;
 
+import io.github.openfacade.table.api.anno.Column;
+import io.github.openfacade.table.api.anno.Table;
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+@Table(name = "test_entity")
 public class TestEntity {
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "blob_bytes_field")
+    private byte[] blobBytesField;
 }
